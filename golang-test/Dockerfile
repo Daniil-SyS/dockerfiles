@@ -1,3 +1,9 @@
+# Run simple golang application in a container
+#
+# docker run -d \
+#	 --name go_project \
+#	 dan/golang
+#
 FROM golang:alpine as build
 WORKDIR /go/bin
 COPY . .
